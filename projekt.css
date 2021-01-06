@@ -1,21 +1,35 @@
-body {
-    font-family: ######################### ;
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poiret One';
+    vertical-align: baseline;
 }
 
-div.top {
-background-image: url("https://s10.tvp.pl/images2/0/9/0/uid_090c9d9b5ecf5885d38e47dd361a80701583148206486_width_1280_play_0_pos_0_gs_0_height_720_image-tlo-transmisji-i-dyscypliny-mobile.jpg")
+header.top {
+background-image: url("https://s10.tvp.pl/images2/0/9/0/uid_090c9d9b5ecf5885d38e47dd361a80701583148206486_width_1280_play_0_pos_0_gs_0_height_720_image-tlo-transmisji-i-dyscypliny-mobile.jpg");
+background-position-y: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+height: 1000px
+/* USTAWIĆ TŁO TAK ŻEBY ZMNIEJSZAŁO SIĘ PRZY ZMNIEJSZANIU STRONY*/
 }
 div.welcome {
     padding: 100px 0px;
     text-align: center;
 }
 
-nav {
-    font-size: 0.7em;
-    padding: 30px 50px;
+.navigation {
+    margin: 0px 23%;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 70px 50px;
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+/*LEPIEJ ROZSTAWIĆ PROPORCJONALNIE NAV - zrobiły się jakieś marginesy po bokach "ul" ? */
+/*ustawienie na środku nie powinno być przez margin? - przy zmniejszaniu strony margin zostaje*/
 }
 
 ul,li {
@@ -26,35 +40,53 @@ ul,li {
 }
 
 ul {
+    /* margin: 0;
+    border: 0;
+    padding: 0; */
+    max-width: 65%;
     display: flex;
     flex: 1;
     justify-content: space-evenly;
-    max-width: 65%;
+
 }
 
 a {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color: white;
 }
 
+a:hover {
+    color:rgb(0, 87, 58)
+}
+
 h1 {
-    font-size: 2em;
+    font-size: 40px;
     text-align: center;
     color: white;
 }
 
 h2 {
-    font-size: 3em;
+    margin: 0px;
+    padding: 30px 10px 50px 10px;
+    font-size: 75px;
     text-align: center;
     color: white;
 }
 
-button {
+.button {
     background-color: rgb(0, 87, 58);
     color: white;
     padding: 20px 35px;
     border: none;
     border-radius: 5px;
     font-size: 120%;
-
+    font-weight: bolder;
+}
+a.button:hover {
+    color: white;
+    cursor: pointer;
+    background-color:rgb(0, 67, 44);
+    transition: background-color 1s;
 }
