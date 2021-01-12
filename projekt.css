@@ -7,7 +7,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     vertical-align: baseline;
 }
 
-header.top {
+.top {
 background-image: url("https://s10.tvp.pl/images2/0/9/0/uid_090c9d9b5ecf5885d38e47dd361a80701583148206486_width_1280_play_0_pos_0_gs_0_height_720_image-tlo-transmisji-i-dyscypliny-mobile.jpg");
 background-position-y: bottom;
 background-repeat: no-repeat;
@@ -15,78 +15,96 @@ background-size: cover;
 height: 1000px
 /* USTAWIĆ TŁO TAK ŻEBY ZMNIEJSZAŁO SIĘ PRZY ZMNIEJSZANIU STRONY*/
 }
+
 div.welcome {
     padding: 100px 0px;
     text-align: center;
 }
 
-.navigation {
-    margin: 0px 23%;
-    font-size: 15px;
+.header {
+    padding: 40px 500px;
+    font-size: 16px;
     font-weight: bolder;
-    padding: 70px 50px;
-    display: flex;
-    justify-content: space-between;
     text-transform: uppercase;
-/*LEPIEJ ROZSTAWIĆ PROPORCJONALNIE NAV - zrobiły się jakieś marginesy po bokach "ul" ? */
-/*ustawienie na środku nie powinno być przez margin? - przy zmniejszaniu strony margin zostaje*/
+    color: #fff;
+    display: flex;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 ul,li {
     margin: 0;
-    padding: 0;
+    padding: 0px 10px;
     display: inline;
-    color: white;
-}
-
-ul {
-    /* margin: 0;
-    border: 0;
-    padding: 0; */
-    max-width: 65%;
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-
+    color:#fff;
 }
 
 a {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 a:hover {
     color:rgb(0, 87, 58)
 }
 
-h1 {
-    font-size: 40px;
+.h1_welcome {
+    font-size: 50px;
+    padding-top: 100px;
     text-align: center;
-    color: white;
+    color: #fff;
 }
-
-h2 {
+.h2_welcome {
     margin: 0px;
-    padding: 30px 10px 50px 10px;
+    padding: 50px 10px 70px 10px;
     font-size: 75px;
     text-align: center;
-    color: white;
+    color: #fff;
+}
+.h3_services {
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+.h4_services {
+    text-align: center;
+}
+
+.section_description {
+    text-align: center;
+    padding: 10px;
+}
+
+.container_services {
+    padding: 100px 400px 400px 400px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 70%;
 }
 
 .button {
     background-color: rgb(0, 87, 58);
-    color: white;
-    padding: 20px 35px;
+    color: #fff;
+    padding: 25px 40px;
     border: none;
     border-radius: 5px;
-    font-size: 120%;
+    font-size: 140%;
     font-weight: bolder;
 }
 a.button:hover {
-    color: white;
+    color: #fff;
     cursor: pointer;
     background-color:rgb(0, 67, 44);
     transition: background-color 1s;
 }
+
