@@ -71,13 +71,19 @@ a:hover {
     text-align: center;
     color: #fff;
 }
-.h3_services {
+.h3_section {
     font-size: 50px;
     padding-top: 100px;
     text-align: center;
 }
 .h4_services {
+    font-size: 20px;
     text-align: center;
+}
+.h5_portfolio {
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
 }
 
 .section_description {
@@ -85,11 +91,50 @@ a:hover {
     padding: 10px;
 }
 
+.item_description {
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
 .container_services {
-    padding: 100px 400px 400px 400px;
+    padding: 100px 400px 200px 400px;
     display: flex;
     justify-content: space-evenly;
     max-width: 70%;
+}
+
+.services_item_one, .services_item_two, .services_item_three {
+    max-width: 250px;   
+}
+
+.portfolio {
+    background-color: rgb(230, 230, 230);
+}
+
+.container_portfolio {
+    padding: 50px 400px 100px 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 70%;
+}
+
+.portfolio_item {
+    max-width: 350px;
+}
+
+.portfolio_img {
+    margin: 50px 0px 0px 0px;
+    height: 301px;
+    width: 291px;; 
+    background-color: #fff; 
+}
+/*USUNĄĆ SZARY PASEK POD OBRAZKAMI*/
+.portfolio_img:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.5s;
 }
 
 .button {
