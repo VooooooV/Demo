@@ -7,7 +7,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     vertical-align: baseline;
 }
 
-.top {
+.Top {
 background-image: url("https://i.ibb.co/bNM90FJ/t-o.jpg");
 background-position: center bottom;
 background-repeat: no-repeat;
@@ -17,12 +17,12 @@ opacity: 0.75;
 /* USTAWIĆ TŁO TAK ŻEBY ZMNIEJSZAŁO SIĘ PRZY ZMNIEJSZANIU STRONY*/
 }
 
-div.welcome {
+.Welcome {
     padding: 100px 0px;
     text-align: center;
 }
 
-.header {
+.Header {
     padding: 40px 0px;
     margin: 0 auto;
     width: 50%;
@@ -32,11 +32,7 @@ div.welcome {
     display: flex;
 }
 
-.logo {
-    margin-left: 10px;
-}
-
-.navigation {
+.Navigation {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -61,7 +57,7 @@ a:hover {
     color: rgb(0, 238, 20);
 }
 
-.h1_welcome {
+.Welcome_title {
     font-size: 50px;
     padding-top: 100px;
     text-align: center;
@@ -69,7 +65,7 @@ a:hover {
     color: #fff;
     text-shadow: 1px 1px 2px #000, 0 0 1px rgb(0, 46, 0), 0 0 0.3px rgb(0, 46, 0);
 }
-.h2_welcome {
+.Welcome_subtitle {
     margin: 0px;
     padding: 50px 10px 70px 10px;
     font-size: 75px;
@@ -78,7 +74,7 @@ a:hover {
     text-shadow: 1px 1px 2px #000, 0 0 1px rgb(0, 46, 0), 0 0 0.3px rgb(0, 46, 0);
 }
 
-.Button_welcome {
+.Welcome_button {
     background-color: rgb(0, 75, 0);
     color: #fff;
     padding: 25px 40px;
@@ -89,7 +85,7 @@ a:hover {
     transition: all 1s ease-out;
 }
 /* USTAWIĆ ŻEBY BUTTON NIE POJAWIAŁ SIĘ PRZEZ ANIMACJĘ*/
-a.Button_welcome:hover {
+a.Welcome_button:hover {
     color: #fff;
     cursor: pointer;
     background-color:rgb(10, 150, 15);
@@ -100,14 +96,9 @@ a.Button_welcome:hover {
     padding-top: 100px;
     text-align: center;
 }
-.h4_services {
+.Item_title {
     font-size: 20px;
     text-align: center;
-}
-.h5_portfolio {
-    font-size: 20px;
-    text-align: center;
-    background-color: #fff;
 }
 
 .Section_description {
@@ -117,19 +108,19 @@ a.Button_welcome:hover {
     padding: 10px;
 }
 
-.item_description {
+.Item_description {
     font-weight: bolder;
     text-align: center;
     padding-bottom: 10px;
     background-color: #fff;
 }
 
-.container_services {
+.Services_container {
     margin: 0 auto;
     padding: 150px 0px 300px 0px;
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 50%; 
 }
 
 .services_item_one, .services_item_two, .services_item_three {
@@ -141,7 +132,7 @@ a.Button_welcome:hover {
     background-color: rgb(230, 230, 230);
 }
 
-.container_portfolio {
+.Container_portfolio {
     margin: 0 auto;
     padding: 150px 0px 300px 0px;
     display: flex;
@@ -150,36 +141,35 @@ a.Button_welcome:hover {
     max-width: 70%;
 }
 
-.row_one {
+.Row_one {
     display: flex;
     padding-bottom: 25px;
 }
-.row_two {
+.Row_two {
     padding-top: 25px;
     display: flex;
 }
 
-.portfolio_item {
+.Portfolio_item {
     margin: 0px 20px 0px 20px;
     max-width: 350px;
     background-color: #fff; 
 }
 
-.portfolio_img {
+.Portfolio_img {
     margin: 0px auto;
     height: 350px;
     width: 290px;
     transition: opacity 1s ease-out;
 }
 /*USUNĄĆ SZARY PASEK POD OBRAZKAMI*/
-.portfolio_img:hover {
+.Portfolio_img:hover {
     cursor: pointer;
     opacity: 0.85;
 }
 
 .About {
     min-height: 500px;
-
 }
 
 .Contact {
@@ -270,14 +260,17 @@ a.Button_contact:hover {
 */
 
 
+@media (max-width: 1100px){
+    .Header {
+        font-size: 15px
+    }
 }
 
-@media (max-width: 768px){
-    h1 {
-        font-size: 4em;
+/* @media (max-width: 975px){
+    .Header {
+        font-size: 13px
     }
-    nav {
+    .Row_one {
         flex-direction: column;
-    }
-    nav ul {
-     flex-direction: column;
+    } */
+    
