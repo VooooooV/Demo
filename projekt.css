@@ -165,7 +165,7 @@ a.Welcome_button:hover {
 /*USUNĄĆ SZARY PASEK POD OBRAZKAMI*/
 .Portfolio_img:hover {
     cursor: pointer;
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
 .About {
@@ -266,11 +266,40 @@ a.Button_contact:hover {
     }
 }
 
-/* @media (max-width: 975px){
+@media (max-width: 975px){
     .Header {
         font-size: 13px
     }
-    .Row_one {
-        flex-direction: column;
-    } */
+    .Portfolio_item {
+        margin: 0 10px;
+        transition: 0.5s ease-out;
+    }
+}
     
+@media (max-width: 930px){
+     .Header {
+        font-size: 11px
+     }
+    
+    .Portfolio_img {
+        margin: 0px auto;
+        height: 300px;
+        width: 248.5px;
+        transition: 0/5s ease-out;
+    }
+
+    .Welcome_title {
+        font-size: 40px;
+    }
+    .Welcome_subtitle {
+        font-size: 60px;
+        transition: 0.5s ease-out;
+    }
+}   
+
+@media (max-width: 800px){
+    .Navigation {
+        /* flex-direction: column; */
+        text-align: right;
+    }
+}
